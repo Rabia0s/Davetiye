@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dekoratif As Mobilya Davetiye</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- FULL SCREEN ENVELOPE -->
+
+<div class="envelope-screen" id="envelopeScreen">
+
+  <div class="envelope-container" onclick="openInvite()">
+
+    <div class="envelope">
+
+      <div class="envelope-body"></div>
+
+      <div class="envelope-top"></div>
+
+      <div class="seal">
+        DA
+      </div>
+
+    </div>
+
+    <div class="tap-text">
+      mühre dokunun
+    </div>
+
+  </div>
+
+</div>
+
+<!-- INVITATION -->
+
+<div class="invitation" id="invitation">
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <img src="image5.JPG" alt="Showroom">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <div class="hero-small">
+        showroom opening invitation
+      </div>
+
+      <h1 class="hero-title">
+        Dekoratif As<br>
+        Mobilya
+      </h1>
+
+      <div class="hero-sub">
+        exclusive opening night
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MESSAGE -->
+
+  <section class="section">
+
+    <div class="section-label">
+      davet
+    </div>
+
+    <h2 class="section-title">
+      Yeni Bir Dünyanın Kapıları Açılıyor
+    </h2>
+
+    <p class="section-text">
+      Zarafetle tasarlanmış yeni bir dünyanın kapıları açılıyor.
+      <br><br>
+
+      Dekoratif As Mobilya Showroom açılış davetine davetlisiniz.
+      <br><br>
+
+      Kokteyl ve müzik eşliğinde gerçekleşecek bu özel gecede
+      sizleri aramızda görmekten onur duyarız.
+    </p>
+
+  </section>
+
+  <!-- GALLERY -->
+
+  <section class="section gallery-section">
+
+    <div class="section-label">
+      showroom
+    </div>
+
+    <div class="gallery">
+
+      <img src="image1.jpeg" alt="">
+      <img src="image2.jpeg" alt="">
+      <img src="image3.JPG" alt="">
+      <img src="image4.JPG" alt="">
+      
+
+    </div>
+
+  </section>
+
+  <!-- EVENT INFO -->
+
+  <section class="section info-section">
+
+    <div class="section-label">
+      etkinlik bilgileri
+    </div>
+
+    <div class="info-card">
+
+      <div class="info-item">
+
+        <span class="info-title">
+          Tarih
+        </span>
+
+        <span class="info-desc">
+          3 Haziran 2026
+        </span>
+
+      </div>
+
+      <div class="info-item">
+
+        <span class="info-title">
+          Saat
+        </span>
+
+        <span class="info-desc">
+          19.30 - 22.00
+        </span>
+
+      </div>
+
+      <div class="info-item">
+
+        <span class="info-title">
+          Yer
+        </span>
+
+        <span class="info-desc">
+          Dekoratif As Mobilya
+        </span>
+
+      </div>
+
+    </div>
+
+    <a 
+      href="https://maps.app.goo.gl/mgZD6Qax8SdeSMab6?g_st=ic"
+      class="location-btn"
+    >
+      canlı konum →
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    Dekoratif As Mobilya · 2026
+  </footer>
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function openInvite(){
+
+  const screen = document.getElementById("envelopeScreen");
+
+  // zarf açılma animasyonu
+  screen.classList.add("open");
+
+  // fade out
+  setTimeout(() => {
+
+    screen.classList.add("hide");
+
+  },1800);
+
+  // davetiye göster
+  setTimeout(() => {
+
+    document.getElementById("invitation").style.display = "block";
+
+    document.body.style.overflow = "auto";
+
+  },2500);
+
+}
+
+</script>
+
+</body>
+</html>
